@@ -15,10 +15,9 @@ using namespace cv;
 /** Function Headers */
 void detectAndDisplay(Mat& frame, int nr);
 /** Global variables */
-#define IMG_PATH_FORMAT "C:\\Main\\Temp\\Cars\\deleteMe\\%d.bmp"
 const cv::String	WINDOW_NAME("Camera video");
 /** place the xml in the home directory */
-const cv::String	CASCADE_FILE("/home/osboxes/Project/haar_xml_07_19.xml");
+const cv::String	CASCADE_FILE("/home/haar_xml_07_19.xml");
 cv::CascadeClassifier *cascade_classifier;
 cv::Mat frame, traffic_template;
 cv::Mat trLightROI;
